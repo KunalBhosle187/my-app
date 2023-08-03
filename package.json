@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "flask-dev": "pip3 install -r requirements.txt && npm run start-flask",
+    "start-flask": "set FLASK_APP=api.index&& python -m flask run -p 5328",
+    "next-dev": "next dev",
+    "dev": "concurrently \"npm run next-dev\" \"npm run flask-dev\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3"
+  }
+}
